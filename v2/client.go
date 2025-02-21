@@ -1383,3 +1383,8 @@ func (c *Client) NewSimpleEarnService() *SimpleEarnService {
 }
 
 // ----- end simple earn service -----
+
+// NewGetPortfolioMarginAssetIndexPriceService get portfolio margin asset index price
+func (c *Client) NewGetPortfolioMarginAssetIndexPriceService() *GetPortfolioMarginAssetIndexPriceService {
+	return &GetPortfolioMarginAssetIndexPriceService{c: c}
+}
