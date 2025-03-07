@@ -1388,3 +1388,7 @@ func (c *Client) NewSimpleEarnService() *SimpleEarnService {
 func (c *Client) NewGetPortfolioMarginAssetIndexPriceService() *GetPortfolioMarginAssetIndexPriceService {
 	return &GetPortfolioMarginAssetIndexPriceService{c: c}
 }
+
+func (c *Client) NewGetFundingAssetService() *GetFundingAssetService {
+	return &GetFundingAssetService{c: c}
+}
